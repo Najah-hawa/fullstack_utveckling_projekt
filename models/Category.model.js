@@ -14,7 +14,7 @@ const CategorySchema = new mongoose.Schema({
         },
     description: {
         type: String,
-        maxlength: [200, "Beskrivningen är för lång"],
+        maxlength: [200, "Description is to long"],
         default: ""
     },
     active: {
