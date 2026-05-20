@@ -29,6 +29,7 @@ const init = async () => {
     // Server routes
     require("./routers/category.route")(server);
     require("./routers/product.route")(server); 
+    require("./routers/auth.route")(server);
    
     await server.start();
     console.log('🚀 Server running on %s', server.info.uri);
